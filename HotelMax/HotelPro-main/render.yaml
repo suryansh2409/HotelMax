@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: hotelpro-server
+    runtime: node
+    plan: free
+    region: oregon
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5001
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: CLIENT_URL
+        value: "https://hotel-pro-n4ga.vercel.app"
+      - key: PAYMENT_PROVIDER
+        value: sandbox
+      - key: ADMIN_NAME
+        value: HotelPro Master Admin
+      - key: ADMIN_EMAIL
+        value: admin@hotelpro.com
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_PHONE
+        value: "+1 (800) 555-0199"

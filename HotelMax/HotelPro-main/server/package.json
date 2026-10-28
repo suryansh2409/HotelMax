@@ -1,0 +1,42 @@
+{
+  "name": "hotelpro-server",
+  "version": "1.0.0",
+  "description": "HotelPro Backend REST API - Full-Stack Hotel Booking & Management System",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seedData.js",
+    "test": "NODE_ENV=test vitest run"
+  },
+  "keywords": [
+    "hotelpro",
+    "hotel-management",
+    "booking",
+    "mern",
+    "express",
+    "mongoose"
+  ],
+  "author": "HotelPro Engineering",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.15",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.1.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.3"
+  }
+}

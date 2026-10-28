@@ -1,0 +1,16 @@
+{
+  "name": "hotelpro",
+  "version": "1.0.0",
+  "description": "HotelPro - Full-Stack Hotel Booking and Management System (MERN)",
+  "scripts": {
+    "start": "npm --prefix server start",
+    "server": "npm --prefix server dev",
+    "client": "npm --prefix client dev",
+    "build:client": "npm --prefix client build",
+    "test:server": "npm --prefix server test",
+    "seed": "npm --prefix server run seed"
+  },
+  "keywords": ["hotel", "hotelpro", "booking", "hospitality", "management", "mern"],
+  "author": "HotelPro Team",
+  "license": "ISC"
+}
